@@ -27,19 +27,11 @@
             </ImageView>
          </children>
       </VBox>
-      <TextField fx:id="adresseIPClient" layoutX="276.0" layoutY="87.0" prefHeight="25.0" prefWidth="227.0" promptText="IP adresse" style="-fx-background-color: white; -fx-border-color: #ff0000; -fx-border-radius: 5px;" text="127.0.0.1">
-         <font>
-            <Font size="12.0" />
-         </font>
-      </TextField>
       <Button fx:id="connexionClient" layoutX="405.0" layoutY="128.0" mnemonicParsing="false" onMouseClicked="#connexionClientCliquer" prefHeight="27.0" prefWidth="100.0" style="-fx-border-color: #ff0000; -fx-border-radius: 10px; -fx-background-color: white;" text="Connexion" textFill="RED" />
       <TextArea fx:id="affichageClient" layoutY="183.0" prefHeight="175.0" prefWidth="600.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" />
       <Button layoutX="390.0" layoutY="435.0" mnemonicParsing="false" onMouseClicked="#envoyerClientCliquer" prefHeight="27.0" prefWidth="100.0" style="-fx-background-color: #ff0000; -fx-background-radius: 10px; -fx-border-radius: 10px;" text="Envoyer" textFill="WHITE" AnchorPane.bottomAnchor="38.0" AnchorPane.rightAnchor="26.0" />
-      <TextField fx:id="portClient" layoutX="276.0" layoutY="41.0" prefHeight="25.0" prefWidth="227.0" promptText="Port" style="-fx-background-color: white; -fx-border-color: #ff0000; -fx-border-radius: 5px;" text="1997">
-         <font>
-            <Font size="12.0" />
-         </font>
-      </TextField>
       <JFXTextField fx:id="messageClient" focusColor="#ff0900" layoutX="191.0" layoutY="398.0" prefHeight="25.0" prefWidth="208.0" promptText="Entrer votre message ici" unFocusColor="RED" AnchorPane.bottomAnchor="87.0" AnchorPane.leftAnchor="171.0" AnchorPane.rightAnchor="27.0" />
+      <JFXTextField fx:id="adresseIPClient" focusColor="RED" layoutX="276.0" layoutY="87.0" prefHeight="25.0" prefWidth="227.0" promptText="IP adresse" text="127.0.0.1" unFocusColor="RED" />
+      <JFXTextField fx:id="portClient" focusColor="RED" layoutX="276.0" layoutY="41.0" prefHeight="25.0" prefWidth="227.0" promptText="Port" text="1997" unFocusColor="RED" />
    </children>
 </AnchorPane>
