@@ -1,5 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
+<?import com.jfoenix.controls.*?>
 <?import javafx.scene.paint.*?>
 <?import javafx.scene.text.*?>
 <?import javafx.scene.control.*?>
@@ -27,14 +28,10 @@
             </ImageView>
          </children>
       </VBox>
-      <TextField fx:id="portServeur" layoutX="276.0" layoutY="87.0" prefHeight="25.0" prefWidth="227.0" promptText="Port" style="-fx-background-color: white; -fx-border-color: #ff0000; -fx-border-radius: 5px;" text="1997">
-         <font>
-            <Font size="12.0" />
-         </font>
-      </TextField>
+      <JFXTextField fx:id="portServeur" focusColor="RED" layoutX="276.0" layoutY="87.0" prefHeight="25.0" prefWidth="227.0" promptText="Port" text="1997" unFocusColor="RED" />
       <Button layoutX="405.0" layoutY="128.0" mnemonicParsing="false" onMouseClicked="#connexionServeurCliquer" prefHeight="27.0" prefWidth="100.0" style="-fx-border-color: #ff0000; -fx-border-radius: 10px; -fx-background-color: white;" text="Connexion" textFill="RED" />
       <TextArea fx:id="affichageServeur" layoutY="183.0" prefHeight="175.0" prefWidth="600.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" />
-      <TextField fx:id="messageServeur" layoutX="191.0" layoutY="398.0" prefHeight="25.0" prefWidth="208.0" promptText="Entrer votre message ici" style="-fx-border-radius: 5px; -fx-border-radius: 5px; -fx-border-color: #ff0000;" AnchorPane.bottomAnchor="87.0" AnchorPane.leftAnchor="171.0" AnchorPane.rightAnchor="27.0" />
+      <JFXTextField fx:id="messageServeur" focusColor="#ff0900" layoutX="191.0" layoutY="398.0" prefHeight="25.0" prefWidth="208.0" promptText="Entrer votre message ici" unFocusColor="RED" AnchorPane.bottomAnchor="87.0" AnchorPane.leftAnchor="171.0" AnchorPane.rightAnchor="27.0" />
       <Button layoutX="390.0" layoutY="435.0" mnemonicParsing="false" onMouseClicked="#envoyerServeurCliquer" prefHeight="27.0" prefWidth="100.0" style="-fx-background-color: #ff0000; -fx-background-radius: 10px; -fx-border-radius: 10px;" text="Envoyer" textFill="WHITE" AnchorPane.bottomAnchor="38.0" AnchorPane.rightAnchor="26.0" />
    </children>
 </AnchorPane>

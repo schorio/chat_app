@@ -5,15 +5,12 @@
  */
 package client;
 
+import com.jfoenix.controls.JFXTextField;
 import java.io.IOException;
 import java.net.Socket;
-import java.net.URL;
-import java.util.ResourceBundle;
 import javafx.fxml.FXML;
-import javafx.fxml.Initializable;
 import javafx.scene.control.Button;
 import javafx.scene.control.TextArea;
-import javafx.scene.control.TextField;
 import javafx.scene.input.MouseEvent;
 
 /**
@@ -27,15 +24,15 @@ public class ClientController implements FrameInterface {
     private RecepteurMessage resMess;
     
     @FXML
-    private TextField adresseIPClient;
+    private JFXTextField adresseIPClient;
     @FXML
     private Button connexionClient;
     @FXML
     private TextArea affichageClient;
     @FXML
-    private TextField messageClient;
+    private JFXTextField messageClient;
     @FXML
-    private TextField portClient;
+    private JFXTextField portClient;
   
 
     @FXML

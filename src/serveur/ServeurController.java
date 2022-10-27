@@ -5,13 +5,9 @@
  */
 package serveur;
 
-import java.net.URL;
-import java.util.ResourceBundle;
+import com.jfoenix.controls.JFXTextField;
 import javafx.fxml.FXML;
-import javafx.fxml.Initializable;
-import javafx.scene.control.Button;
 import javafx.scene.control.TextArea;
-import javafx.scene.control.TextField;
 import javafx.scene.input.MouseEvent;
 
 /**
@@ -25,13 +21,13 @@ public class ServeurController implements FrameInterface {
     private RecepteurMessage recmessage;
     
     @FXML
-    private TextField portServeur;
+    private JFXTextField portServeur;
     
     @FXML
     private TextArea affichageServeur;
     
     @FXML
-    private TextField messageServeur;
+    private JFXTextField messageServeur;
        
 
     @FXML
